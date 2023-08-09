@@ -10,6 +10,24 @@
       }
     },
     {
+      "identity" : "pulse",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kean/Pulse.git",
+      "state" : {
+        "revision" : "f41d4d9597cd6e4611bb87bab70e23013c251177",
+        "version" : "4.0.1"
+      }
+    },
+    {
+      "identity" : "pulseloghandler",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kean/PulseLogHandler.git",
+      "state" : {
+        "revision" : "2564a27156fb07ae4916c9fe628577a03f6dc4f9",
+        "version" : "4.0.0"
+      }
+    },
+    {
       "identity" : "swift-case-paths",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/pointfreeco/swift-case-paths",

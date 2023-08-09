@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		316511EC2A84391700666623 /* TCASwiftLog in Frameworks */ = {isa = PBXBuildFile; productRef = 316511EB2A84391700666623 /* TCASwiftLog */; };
+		316511F42A84399A00666623 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 316511F32A84399A00666623 /* ComposableArchitecture */; };
+		316511F72A8439B100666623 /* Pulse in Frameworks */ = {isa = PBXBuildFile; productRef = 316511F62A8439B100666623 /* Pulse */; };
+		316511F92A8439B100666623 /* PulseUI in Frameworks */ = {isa = PBXBuildFile; productRef = 316511F82A8439B100666623 /* PulseUI */; };
+		316511FC2A8439C600666623 /* PulseLogHandler in Frameworks */ = {isa = PBXBuildFile; productRef = 316511FB2A8439C600666623 /* PulseLogHandler */; };
 		CA0934B62A12A9680020DEF5 /* SwiftUINavigation in Frameworks */ = {isa = PBXBuildFile; productRef = CA0934B52A12A9680020DEF5 /* SwiftUINavigation */; };
 		DC7CE4E729E9E6E4006B6263 /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = DC7CE4E629E9E6E4006B6263 /* ding.wav */; };
 		DC808D7329E9C3AC0072B4A9 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC808D7229E9C3AC0072B4A9 /* App.swift */; };
@@ -14,7 +19,6 @@
 		DC808D8429E9C3AD0072B4A9 /* StandupFormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC808D8329E9C3AD0072B4A9 /* StandupFormTests.swift */; };
 		DC808D8E29E9C3AD0072B4A9 /* StandupsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC808D8D29E9C3AD0072B4A9 /* StandupsUITests.swift */; };
 		DC808DA029E9C4340072B4A9 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC808D9F29E9C4340072B4A9 /* DataManager.swift */; };
-		DC808DA329E9C4490072B4A9 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = DC808DA229E9C4490072B4A9 /* ComposableArchitecture */; };
 		DC808DA529E9C4C70072B4A9 /* OpenSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC808DA429E9C4C70072B4A9 /* OpenSettings.swift */; };
 		DC808DA729E9C4D60072B4A9 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC808DA629E9C4D60072B4A9 /* SpeechRecognizer.swift */; };
 		DC808DA929E9C5090072B4A9 /* StandupForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC808DA829E9C5090072B4A9 /* StandupForm.swift */; };
@@ -49,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		316511EA2A8438F900666623 /* tca-swift-log */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "tca-swift-log"; path = ../..; sourceTree = "<group>"; };
 		DC7CE4E629E9E6E4006B6263 /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
 		DC808D6F29E9C3AC0072B4A9 /* Standups.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Standups.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC808D7229E9C3AC0072B4A9 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
@@ -57,7 +62,6 @@
 		DC808D8329E9C3AD0072B4A9 /* StandupFormTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandupFormTests.swift; sourceTree = "<group>"; };
 		DC808D8929E9C3AD0072B4A9 /* StandupsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StandupsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC808D8D29E9C3AD0072B4A9 /* StandupsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandupsUITests.swift; sourceTree = "<group>"; };
-		DC808D9C29E9C3C10072B4A9 /* swift-composable-architecture */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "swift-composable-architecture"; path = ../..; sourceTree = "<group>"; };
 		DC808D9F29E9C4340072B4A9 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		DC808DA429E9C4C70072B4A9 /* OpenSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSettings.swift; sourceTree = "<group>"; };
 		DC808DA629E9C4D60072B4A9 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
@@ -79,8 +83,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				316511F92A8439B100666623 /* PulseUI in Frameworks */,
 				DC808DB629E9C58F0072B4A9 /* Tagged in Frameworks */,
-				DC808DA329E9C4490072B4A9 /* ComposableArchitecture in Frameworks */,
+				316511EC2A84391700666623 /* TCASwiftLog in Frameworks */,
+				316511F72A8439B100666623 /* Pulse in Frameworks */,
+				316511FC2A8439C600666623 /* PulseLogHandler in Frameworks */,
+				316511F42A84399A00666623 /* ComposableArchitecture in Frameworks */,
 				CA0934B62A12A9680020DEF5 /* SwiftUINavigation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,7 +121,7 @@
 		DC808D6629E9C3AC0072B4A9 = {
 			isa = PBXGroup;
 			children = (
-				DC808D9C29E9C3C10072B4A9 /* swift-composable-architecture */,
+				316511EA2A8438F900666623 /* tca-swift-log */,
 				DC808D9E29E9C4040072B4A9 /* Dependencies */,
 				DC808D7029E9C3AC0072B4A9 /* Products */,
 				DC808D7129E9C3AC0072B4A9 /* Standups */,
@@ -204,9 +212,13 @@
 			);
 			name = Standups;
 			packageProductDependencies = (
-				DC808DA229E9C4490072B4A9 /* ComposableArchitecture */,
 				DC808DB529E9C58F0072B4A9 /* Tagged */,
 				CA0934B52A12A9680020DEF5 /* SwiftUINavigation */,
+				316511EB2A84391700666623 /* TCASwiftLog */,
+				316511F32A84399A00666623 /* ComposableArchitecture */,
+				316511F62A8439B100666623 /* Pulse */,
+				316511F82A8439B100666623 /* PulseUI */,
+				316511FB2A8439C600666623 /* PulseLogHandler */,
 			);
 			productName = Standups;
 			productReference = DC808D6F29E9C3AC0072B4A9 /* Standups.app */;
@@ -283,6 +295,9 @@
 			packageReferences = (
 				DC808DB429E9C58F0072B4A9 /* XCRemoteSwiftPackageReference "swift-tagged" */,
 				CA0934B42A12A9680020DEF5 /* XCRemoteSwiftPackageReference "swiftui-navigation" */,
+				316511F02A84398300666623 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				316511F52A8439B000666623 /* XCRemoteSwiftPackageReference "Pulse" */,
+				316511FA2A8439C600666623 /* XCRemoteSwiftPackageReference "PulseLogHandler" */,
 			);
 			productRefGroup = DC808D7029E9C3AC0072B4A9 /* Products */;
 			projectDirPath = "";
@@ -668,6 +683,30 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		316511F02A84398300666623 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		316511F52A8439B000666623 /* XCRemoteSwiftPackageReference "Pulse" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Pulse.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		316511FA2A8439C600666623 /* XCRemoteSwiftPackageReference "PulseLogHandler" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/PulseLogHandler.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 		CA0934B42A12A9680020DEF5 /* XCRemoteSwiftPackageReference "swiftui-navigation" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swiftui-navigation.git";
@@ -687,14 +726,34 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		316511EB2A84391700666623 /* TCASwiftLog */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TCASwiftLog;
+		};
+		316511F32A84399A00666623 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 316511F02A84398300666623 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		316511F62A8439B100666623 /* Pulse */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 316511F52A8439B000666623 /* XCRemoteSwiftPackageReference "Pulse" */;
+			productName = Pulse;
+		};
+		316511F82A8439B100666623 /* PulseUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 316511F52A8439B000666623 /* XCRemoteSwiftPackageReference "Pulse" */;
+			productName = PulseUI;
+		};
+		316511FB2A8439C600666623 /* PulseLogHandler */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 316511FA2A8439C600666623 /* XCRemoteSwiftPackageReference "PulseLogHandler" */;
+			productName = PulseLogHandler;
+		};
 		CA0934B52A12A9680020DEF5 /* SwiftUINavigation */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CA0934B42A12A9680020DEF5 /* XCRemoteSwiftPackageReference "swiftui-navigation" */;
 			productName = SwiftUINavigation;
-		};
-		DC808DA229E9C4490072B4A9 /* ComposableArchitecture */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = ComposableArchitecture;
 		};
 		DC808DB529E9C58F0072B4A9 /* Tagged */ = {
 			isa = XCSwiftPackageProductDependency;

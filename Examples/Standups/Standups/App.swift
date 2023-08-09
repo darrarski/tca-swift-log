@@ -1,8 +1,16 @@
 import ComposableArchitecture
+import Logging
+import PulseLogHandler
+import PulseUI
 import SwiftUI
+import TCASwiftLog
 
 @main
 struct StandupsApp: App {
+  init() {
+    LoggingSystem.bootstrap(PersistentLogHandler.init)
+  }
+
   var body: some Scene {
     WindowGroup {
       // NB: This conditional is here only to facilitate UI testing so that we can mock out certain
@@ -15,12 +23,24 @@ struct StandupsApp: App {
         // NB: Don't run application when testing so that it doesn't interfere with tests.
         EmptyView()
       } else {
-        AppView(
-          store: Store(initialState: AppFeature.State()) {
-            AppFeature()
-              ._printChanges()
+        TabView {
+          AppView(
+            store: Store(initialState: AppFeature.State()) {
+              AppFeature()
+                ._printChanges(.swiftLog(label: "ComposableArchitecture"))
+            }
+          )
+          .tabItem {
+            Label("Standups", systemImage: "app")
           }
-        )
+
+          NavigationStack {
+            ConsoleView(store: .shared)
+          }
+          .tabItem {
+            Label("Logs Console", systemImage: "list.dash.header.rectangle")
+          }
+        }
       }
     }
   }
