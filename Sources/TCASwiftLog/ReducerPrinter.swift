@@ -13,15 +13,19 @@ extension _ReducerPrinter {
   ///
   /// - Parameter label: Logger's label
   public static func swiftLog(label: String) -> Self {
-    swiftLog(Logger(label: label))
+    var logger = Logger(label: label)
+    logger.logLevel = .debug
+    return swiftLog(logger)
   }
 
   /// Logs info about received actions and state changes to provided swift-log's Logger.
   ///
   /// Example usage:
   /// ```
+  /// var logger = Logger(label: "tca")
+  /// logger.logLevel = .debug
   /// let store = Store(initialState: AppFeature.State()) {
-  ///   AppFeature()._printChanges(.swiftLog(Logger(label: "tca")))
+  ///   AppFeature()._printChanges(.swiftLog(logger))
   /// }
   /// ```
   ///
@@ -32,7 +36,7 @@ extension _ReducerPrinter {
       CustomDump.customDump(receivedAction, to: &message, indent: 2)
       message.write("\n")
       message.write(diff(oldState, newState).map { "\($0)\n" } ?? "  (No state changes)\n")
-      logger.info(.init(stringLiteral: message))
+      logger.debug(.init(stringLiteral: message))
     }
   }
 }

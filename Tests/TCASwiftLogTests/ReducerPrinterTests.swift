@@ -29,7 +29,7 @@ final class ReducerPrinterTests: XCTestCase {
 
     XCTAssertNoDifference(handler.logged, [
       .init(
-        level: .info,
+        level: .debug,
         message: """
         received action:
           ReducerPrinterTests.Action.test1
@@ -39,7 +39,7 @@ final class ReducerPrinterTests: XCTestCase {
         """
       ),
       .init(
-        level: .info,
+        level: .debug,
         message: """
         received action:
           ReducerPrinterTests.Action.test2
@@ -76,7 +76,7 @@ private class TestLogHandler: LogHandler {
   }
 
   @inlinable var logLevel: Logger.Level {
-    get { .info }
+    get { .debug }
     set {}
   }
 }
